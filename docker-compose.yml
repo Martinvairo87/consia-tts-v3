@@ -1,0 +1,14 @@
+version: "3.9"
+
+services:
+  consia-tts:
+    build:
+      context: ./tts-service
+    container_name: consia-tts
+    ports:
+      - "8010:8010"
+    environment:
+      KOKORO_LANG_CODE: "e"
+      KOKORO_VOICE: "ef_dora"
+      KOKORO_SPEED: "1.0"
+    restart: unless-stopped
