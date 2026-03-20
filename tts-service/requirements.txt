@@ -1,6 +1,3 @@
 fastapi
-uvicorn[standard]
+uvicorn
 numpy
-soundfile
-kokoro>=0.9.4
-misaki[en]
